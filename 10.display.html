@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Displays</title>
+    <style>
+      .box {
+        width: 50%;
+        height: 100px;
+      }
+      .box1 {
+        background: purple;
+      }
+      .box2 {
+        background: yellowgreen;
+      }
+      #test-link {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+      /*inline-block özelligi nav bar için kullanılıyor sadece yazılara 
+     link verilirken bu özellik sayesinde belirledigimiz özelliklerin olduğu yere tıkladıgımızda link çalışıright: .
+      inline elementlere boyut veremiyoruz yukarıda block olarak yapılan elementlere boyut verile biliniyor*/
+    </style>
+  </head>
+  <body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <a href="#" id="test-link"> Test link</a>
+    Deneme content
+  </body>
+</html>
