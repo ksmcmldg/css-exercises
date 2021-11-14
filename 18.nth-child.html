@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nth-child selector</title>
+    <style>
+      p {
+        font-size: 1.5em;
+      }
+      p:last-child {
+        background-color: blanchedalmond;
+      }
+      p:first-child {
+        background-color: antiquewhite;
+      }
+      p:nth-child(1) {
+        color: aquamarine;
+      }
+      p:nth-child(3) {
+        color: aqua;
+      }
+
+      p:nth-child(even) {
+        color: pink;
+      }
+      p:nth-child(odd) {
+        color: blueviolet;
+      }
+      ul {
+        font-size: 1.5em;
+        list-style-type: none;
+      }
+      ul li:nth-child(2n + 1) {
+        /*nth-child(2n)n=0 b= 0 0, 2,4,6,8,10 şeklinde gider*/
+        color: darkgoldenrod;
+      }
+      ul li:nth-child(n + 5) {
+        background: lemonchiffon;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>element</li>
+      <li>element</li>
+      <li>element</li>
+      <li>element</li>
+      <li>element</li>
+      <li>element</li>
+      <li>element</li>
+      <li>element</li>
+      <li>element</li>
+      <li>element</li>
+      <li>element</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias
+      quisquam laboriosam sequi, animi quaerat.
+    </p>
+  </body>
+</html>
