@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Position</title>
+    <style>
+      .red {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+
+      .blue {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        position: relative;
+        left: 5px;
+        top: 5px;
+        z-index: 1;
+      } /*z indexs -1( uzaklaşır) de verile bilinir hangisi büyükse o en yukarıya çıkıyor*/
+      .fixed-topbar {
+        width: 50%;
+        padding: 20px;
+        background-color: black;
+        color: wheat;
+        text-align: center;
+        position: fixed;
+        bottom: 20px;
+      }
+      .outer-box {
+        width: 200px;
+        height: 200px;
+        background-color: #a7a7a7;
+        position: relative; /*position özelligi verilmezse statik kalır ve position absoulte çalımaz
+        kapsayıcımız bir üste gider parrent olan body ye gidecek standart olarak kullanır ve kucuk kutu 
+        standart olarak tarayıcaya göre sıfırlanıright: .;Kapsayıcı kutumuzu hareket ettırırsek ıcındekı box hala 
+        dıştaki kutuya göre hareket eder.*/
+      }
+      .inner-box {
+        height: 50px;
+        width: 50px;
+        background-color: purple;
+        position: absolute; /*kutu içinde kutu olacak şekilde kapsayıcı kutu ve 
+        ıcındeki kutu şeklinde*/
+        top: 15px;
+        right: 20px;
+      }
+      span {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        background-color: slateblue;
+        position: relative;
+        left: 75px;
+      }
+    </style>
+  </head>
+  <body style="height: 1000px">
+    <div class="fixed-topbar">Udemy</div>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="outer-box">
+      <div class="inner-box"></div>
+    </div>
+    <span></span>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt,
+    molestiae. Voluptatum magni, ipsum magnam similique laborum praesentium illo
+    culpa explicabo, minima eos aliquid. Quibusdam veritatis ipsa expedita
+    repellendus iusto ipsam!
+  </body>
+</html>
