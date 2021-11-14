@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-family: "open sans", sans-serif;
+      } /*neden üç adet font ismi yazıldıgında arial yoksa helvetica helvatica yoksa varsayılan olarak hangi font varsa o san serif fontu secer*/
+      p {
+        font-size: 16px;
+        /*line-height: 1.5em;*/
+      }
+      div {
+        font-size: 20px;
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+      }
+      div span {
+        font-size: 75%;
+      }
+      p {
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit <span>amet consectetur</span> amet consectetur
+        adipisicing elit. Repellat, veniam.
+      </p>
+    </div>
+    <h1>Başlık1</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo,
+      deleniti.
+    </p>
+  </body>
+</html>
